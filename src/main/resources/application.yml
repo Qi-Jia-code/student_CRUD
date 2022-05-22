@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: lab10
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mange?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+
+mybatis:
+  type-aliases-package: com.qijia.domain
+  configuration:
+    map-underscore-to-camel-case: true
